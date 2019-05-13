@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>三子棋游戏</title>
+		<script  src="test1.js"></script>
+	<body>
+ 
+		<p><b><h2>三子棋对战(可选AI)</h2></b><p>
+		<table border="1" width="50">
+			<tr>
+				<td><input type="button" id="bt7" value="  "width="50" onclick="bn(7)"></td>
+				<td><input type="button" id="bt8" value="  "width="50" onclick="bn(8)"></td>
+				<td><input type="button" id="bt9" value="  "width="50" onclick="bn(9)"></td>
+			</tr>
+			<tr>
+				<td><input type="button" id="bt4" value="  "width="50" onclick="bn(4)"></td>
+				<td><input type="button" id="bt5" value="  "width="50" onclick="bn(5)"></td>
+				<td><input type="button" id="bt6" value="  "width="50" onclick="bn(6)"></td>
+			</tr>
+			<tr>
+				<td><input type="button" id="bt1" value="  "width="50" onclick="bn(1)"></td>
+				<td><input type="button" id="bt2" value="  "width="50" onclick="bn(2)"></td>
+				<td><input type="button" id="bt3" value="  "width="50" onclick="bn(3)"></td>
+			</tr>
+		</table>
+		<br>
+		<input type="text" id="info" value="游戏开始!玩家先行!" disabled="true">
+		<br><br>
+		<input type="button" id="restart" value="重新开始" onclick="restart()">
+		<input type="button" id="enableAI" value="关闭AI" onclick="cgAI()">
+		<br>
+		<br>O胜利：<input type="text" id="o_win" value="0" disabled="true">
+		<br>X胜利：<input type="text" id="x_win" value="0" disabled="true">
+		<br>_平局：<input type="text" id="draw" value="0" disabled="true">
+ 
+	</body>
